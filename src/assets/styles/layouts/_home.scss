@@ -62,8 +62,9 @@ header .flexboxheader {
 
 .services a {
   display: block;
+  width: 50%;
   padding: 13px 20px;
-  margin: 25px 120px;
+  margin: 25px auto;
   color: $white-color;
   text-align: center;
   text-decoration: none;
@@ -349,11 +350,6 @@ form input[type="submit"]:hover {
 
   h2 {
     text-align: center;
-  }
-
-  .services a {
-    padding: 10px 70px;
-    margin: 30px 40px;
   }
 
   .header .menu a {
