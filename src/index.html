@@ -5,22 +5,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <title>Masia Freixa</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <include src="./views/header.html"></include>
+    <main>
+      <div id="inicio" class="inicio">
+        <div class="container">
+          <h1>La Masia Freixa</h1>
+        </div>
+      </div>
+      <div id="que-es" class="about">
+        <div class="container">
+          <div class="grid">
+            <div class="aboutinfo">
+              <h2>Qué es?</h2>
+              <p>Concebido el año 1896 como fábrica textil, este edificio fue 
+                construido entre 1907 y 1910 en la residencia familiar de Josep Freixa. 
+                Fue un proyecto del arquitecto Lluís Muncunill i Parellada. Se encuentra 
+                ubicada en el centro de Terrassa, en el Parc de Sant Jordi.</p>
+            </div>
+            <div class="aboutphoto">
+              <img src="./assets/images/frente.jpg" alt="Masia Freixa de frente">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="servicios" class="services">
+        <div class="container">
+          <div class="grid">
+            <div class="servicesinfo">
+              <h2>Eventos</h2>
+              <p>La masia dispone de uno 100m2 para celebrar como bodas o cumpleaños. 
+                Esta ubicada en medio de un parque, por lo que es el lugar ideal para cualquier tipo de evento.</p>
+                <a href="">Reservar</a>
+                <img src="./assets/images/eventos.jpg" alt="">
+            </div>
+            <div class="servicesinfo">
+              <h2>Visitas</h2>
+              <p>La masia se puede visitar de lunes a jueves con reserva previa. 
+                La visita dura unos 34 minutos aproximadamente y se realiza en catalán o castellano.</p>
+                <a href="">Reservar</a>
+                <img src="./assets/images/visitas.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formulario" class="newsletter">
+        <div class="container">
+            <form action="sendform" id="newsletter" name="newsletter">
+                <h2>Newsletter</h2>
+                <p>¡Recibe las últimas novedades!
+                </p>
+                <input type="email" id="email" name="email" placeholder="Aquí tu email" required>
+                <input type="submit" class="button" value="Suscribirse">
+            </form>
+        </div>
     </div>
+    </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
